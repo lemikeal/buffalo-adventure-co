@@ -8,22 +8,46 @@
   <meta name="description" content="Buffalo Advenure Co. content site">
   <title>Contact - Buffalo Adventure Co.</title>
   <meta name="theme-color" content="#fafafa">
+    <link rel="stylesheet" href="buffalo-adventure-co/assets/css/contact.css">
 </head>
 <body>
-<nav class="main-nav">
-    <h1><a href="index.html">Buffalo Adventure Co.</a></h1>
-    <image></image>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="hamburger">
-            </label>
-            <ul>
-                <li><a href="adventure.html">Plan Your Adventure!</a></li>
-                <li><a href="about.html">About the Region</a></li>
-                <li><a href="water-data.html">How's the River?</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h2>Contact</h2>
-    <footer>
-    </footer>
+
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <p class="contact-intro">
+    Have questions about your Buffalo River trip? Send us a message and we’ll get back to you within 24 hours.
+  </p>
+
+  <div class="contact-info">
+    <p>📧 info@buffaloriver.com</p>
+    <p>📞 (870) 555-1234</p>
+    <p>📍 Ponca, Arkansas</p>
+  </div>
+
+  <form action="https://formspree.io/f/xnjllqek" method="POST" class="contact-form">
+
+    <label for="name">Name </label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone (optional)</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="reason">Reason for Contact </label>
+    <select id="reason" name="reason">
+      <option value="general">General Question</option>
+      <option value="booking">Booking Inquiry</option>
+      <option value="group">Group Trip</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
 </body>
