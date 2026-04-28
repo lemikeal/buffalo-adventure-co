@@ -15,9 +15,38 @@ body {
     color: #333;
     width: 100%;
     min-height: 100vh;
-    /* overflow-x: clip prevents horizontal scroll without breaking position: sticky */
     overflow-x: clip; 
 }
+
+body, p, li, a, button, input, h2, .section-title {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.top-line, 
+.bottom-line, 
+.buffalo, 
+.adventure {
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.top-line {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.bottom-line {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+p {
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
+
 
 /* 2. Navigation Bar */
 .main-nav {
@@ -27,19 +56,14 @@ body {
     padding: 5px 50px 15px 50px;
     background-color: #66afa6;
     width: 100%;
-    
-    /* Sticky Settings */
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 99999; 
-    
-    /* Separation shadow on scroll */
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Logo and Stacked Brand Text */
 .main-nav h1 a {
     display: flex;
     align-items: center;
@@ -87,9 +111,10 @@ body {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
 }
 
-/* Book Now Button */
 .book-now-btn {
     color: white;
     background-color: #a8160e;
